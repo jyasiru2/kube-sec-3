@@ -35,7 +35,7 @@ pipeline {
 
         stage('Docker Push') {
             steps {
-                sh "docker push yasiru1997/numeric-app:${GIT_COMMIT}"//test
+                sh "docker push yasiru1997/numeric-app:${GIT_COMMIT}"//test_hub
             }
         }
     }
