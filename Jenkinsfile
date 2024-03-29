@@ -29,13 +29,13 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                sh "docker build -t yasiru1997/numeric-app:${GIT_COMMIT} ."
+                sh "docker build -t yasiru1997/hub-docker-hub-3:${GIT_COMMIT} ."
             }
         }
 
         stage('Docker Push') {
             steps {
-                sh "docker push yasiru1997/numeric-app:${GIT_COMMIT}"//test_hub
+                sh "docker push yasiru1997/hub-docker-hub-3:${GIT_COMMIT}"//test_hub
             }
         }
     }
